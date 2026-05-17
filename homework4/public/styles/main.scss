@@ -1,0 +1,238 @@
+$primary-color: #240046;
+$text-color: #001524;
+$bradius: 0.8em;
+$main-margin: 2rem;
+$color-gray: #495057;
+
+body {
+  color: $text-color;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+h1 {
+  color: $primary-color;
+  font-size: 4em;
+  font-weight: 900;
+  margin: $main-margin auto;
+  i {
+    margin-right: 16px;
+  }
+}
+
+button {
+  font-size: 1.2em !important;
+  font-weight: 500 !important;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  margin: 0;
+  &:hover {
+    color: #373737;
+  }
+}
+
+.header {
+  display: flex;
+  background-color: white;
+  color: #011738;
+  align-items: center;
+  margin-bottom: $main-margin + 2;
+  @media (max-width: 1024px) {
+    margin-bottom: $main-margin;
+  }
+  .cont {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-weight: 700;
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+      color: #011738;
+      .name {
+        font-size: 1rem !important;
+        font-weight: light !important;
+      }
+      i {
+        margin-left: 0.5em;
+        font-size: 24px;
+      }
+      a {
+        font-size: 0.8em !important;
+        margin-left: $main-margin;
+        text-decoration: none;
+      }
+    }
+  }
+  h2 {
+    display: inline;
+    i {
+      margin-right: 0.5em;
+    }
+  }
+}
+/*********************************/
+.home {
+  display: flex;
+  width: 100%;
+  margin-top: 64px;
+  margin-bottom: 64px;
+  @media (max-width: 1024px) {
+    margin-top: 16px;
+  }
+  .welcome {
+    width: 50%;
+    @media (max-width: 1024px) {
+      display: grid;
+      justify-content: center;
+      margin: auto;
+      width: 100%;
+      font-size: 0.8rem;
+      p {
+        text-align: center;
+      }
+      a {
+        width: fit-content;
+        margin: auto;
+      }
+    }
+    h1 {
+      margin-bottom: 32px;
+      display: inline-block;
+    }
+    p {
+      margin-bottom: 32px;
+      text-align: left;
+    }
+  }
+  .img {
+    margin: auto;
+    width: 750px;
+    margin-left: 32px;
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+}
+
+/*********************************/
+
+.connect {
+  width: 100%;
+  background: white;
+  border-radius: $bradius;
+  margin: 0 auto 64px auto;
+  @media (max-width: 1024px) {
+    width: 80%;
+    padding: 0px !important;
+  }
+  @media (max-width: 400px) {
+    width: fit-content;
+  }
+  h2 {
+    margin-bottom: $main-margin + 1;
+  }
+  .login,
+  .signup {
+    min-width: 300px;
+    a {
+      font-size: 1.2em !important;
+    }
+  }
+  .illustration {
+    border-top-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+    background-color: #00dbde;
+    background-image: linear-gradient(50deg, #00dbde 0%, #fc00ff 100%);
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+}
+.hint {
+  color: $color-gray;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: $main-margin - 1;
+}
+.add-container {
+  margin: 16px auto;
+  background-color: #f8f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 8px;
+  p {
+    display: inline;
+    margin: 0;
+  }
+}
+td,
+tr {
+  vertical-align: middle;
+}
+.add {
+  padding: 32px;
+  width: 700px;
+  @media (max-width: 1024px) {
+    width: auto;
+  }
+}
+.dashboard {
+  @media (max-width: 770px) {
+    padding: 16px !important  ;
+    width: 100% !important;
+    thead {
+      display: none;
+    }
+    tbody {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      tr {
+        display: grid;
+        th,
+        td {
+          text-align: center;
+          align-self: center;
+        }
+        td:last-of-type {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+.profile {
+  h2 {
+    margin-top: 0 !important;
+  }
+  .avatar {
+    font-size: 5em;
+    text-align: center;
+    margin: auto;
+  }
+}
+main,
+section {
+  background-color: white;
+}
+
+footer {
+  padding: 16px;
+  height: 60px;
+  text-align: center;
+  background-color: #f8f7f7;
+  margin-top: auto;
+  span {
+    color: #01173888;
+  }
+}
