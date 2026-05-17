@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  background: #f3f6fb;
+  color: #1f2937;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-section {
+  background: linear-gradient(135deg, #eef6ff 0%, #ffffff 55%, #f5f7fb 100%);
+}
+
+.profile-photo {
+  width: min(260px, 80vw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid #ffffff;
+  box-shadow: 0 18px 45px rgba(31, 41, 55, 0.16);
+  object-fit: cover;
+}
+
+.section-title {
+  color: #0d6efd;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.info-card,
+.skill-box,
+.contact-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 24px rgba(31, 41, 55, 0.06);
+}
+
+.skill-box {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contact-item {
+  min-height: 96px;
+}
+
+.contact-item strong,
+.contact-item span {
+  display: block;
+}
+
+.contact-item span {
+  color: #6b7280;
+  margin-top: 0.35rem;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  background: #111827;
+  color: #f9fafb;
+}
